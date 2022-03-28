@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- WARNING: Eclipse auto-generated file.
+              Any modifications will be overwritten.
+              To include a user specific buildfile here, simply create one in the same
+              directory with the processing instruction <?eclipse.ant.import?>
+              as the first entry and export the buildfile again. --><project basedir="." default="build" name="manet-webapp">
+    <property environment="env"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="1.5"/>
+    <property name="source" value="1.5"/>
+    <path id="Apache Tomcat v8.5 [Apache Tomcat v8.5].libraryclasspath">
+        <pathelement location="F:/softs/apache-tomcat-8.5.77-windows-x64/apache-tomcat-8.5.77/lib/annotations-api.jar"/>
+        <pathelement location="F:/softs/apache-tomcat-8.5.77-windows-x64/apache-tomcat-8.5.77/lib/catalina-ant.jar"/>
+        <pathelement location="F:/softs/apache-tomcat-8.5.77-windows-x64/apache-tomcat-8.5.77/lib/catalina-ha.jar"/>
+        <pathelement location="F:/softs/apache-tomcat-8.5.77-windows-x64/apache-tomcat-8.5.77/lib/catalina-storeconfig.jar"/>
+        <pathelement location="F:/softs/apache-tomcat-8.5.77-windows-x64/apache-tomcat-8.5.77/lib/catalina-tribes.jar"/>
+        <pathelement location="F:/softs/apache-tomcat-8.5.77-windows-x64/apache-tomcat-8.5.77/lib/catalina.jar"/>
+        <pathelement location="F:/softs/apache-tomcat-8.5.77-windows-x64/apache-tomcat-8.5.77/lib/ecj-4.6.3.jar"/>
+        <pathelement location="F:/softs/apache-tomcat-8.5.77-windows-x64/apache-tomcat-8.5.77/lib/el-api.jar"/>
+        <pathelement location="F:/softs/apache-tomcat-8.5.77-windows-x64/apache-tomcat-8.5.77/lib/gson-2.8.6.jar"/>
+        <pathelement location="F:/softs/apache-tomcat-8.5.77-windows-x64/apache-tomcat-8.5.77/lib/jasper-el.jar"/>
+        <pathelement location="F:/softs/apache-tomcat-8.5.77-windows-x64/apache-tomcat-8.5.77/lib/jasper.jar"/>
+        <pathelement location="F:/softs/apache-tomcat-8.5.77-windows-x64/apache-tomcat-8.5.77/lib/jaspic-api.jar"/>
+        <pathelement location="F:/softs/apache-tomcat-8.5.77-windows-x64/apache-tomcat-8.5.77/lib/jersey-bundle-1.19.1.jar"/>
+        <pathelement location="F:/softs/apache-tomcat-8.5.77-windows-x64/apache-tomcat-8.5.77/lib/jsp-api.jar"/>
+        <pathelement location="F:/softs/apache-tomcat-8.5.77-windows-x64/apache-tomcat-8.5.77/lib/servlet-api.jar"/>
+        <pathelement location="F:/softs/apache-tomcat-8.5.77-windows-x64/apache-tomcat-8.5.77/lib/tomcat-api.jar"/>
+        <pathelement location="F:/softs/apache-tomcat-8.5.77-windows-x64/apache-tomcat-8.5.77/lib/tomcat-coyote.jar"/>
+        <pathelement location="F:/softs/apache-tomcat-8.5.77-windows-x64/apache-tomcat-8.5.77/lib/tomcat-dbcp.jar"/>
+        <pathelement location="F:/softs/apache-tomcat-8.5.77-windows-x64/apache-tomcat-8.5.77/lib/tomcat-i18n-de.jar"/>
+        <pathelement location="F:/softs/apache-tomcat-8.5.77-windows-x64/apache-tomcat-8.5.77/lib/tomcat-i18n-es.jar"/>
+        <pathelement location="F:/softs/apache-tomcat-8.5.77-windows-x64/apache-tomcat-8.5.77/lib/tomcat-i18n-fr.jar"/>
+        <pathelement location="F:/softs/apache-tomcat-8.5.77-windows-x64/apache-tomcat-8.5.77/lib/tomcat-i18n-ja.jar"/>
+        <pathelement location="F:/softs/apache-tomcat-8.5.77-windows-x64/apache-tomcat-8.5.77/lib/tomcat-i18n-ko.jar"/>
+        <pathelement location="F:/softs/apache-tomcat-8.5.77-windows-x64/apache-tomcat-8.5.77/lib/tomcat-i18n-ru.jar"/>
+        <pathelement location="F:/softs/apache-tomcat-8.5.77-windows-x64/apache-tomcat-8.5.77/lib/tomcat-i18n-zh-CN.jar"/>
+        <pathelement location="F:/softs/apache-tomcat-8.5.77-windows-x64/apache-tomcat-8.5.77/lib/tomcat-jdbc.jar"/>
+        <pathelement location="F:/softs/apache-tomcat-8.5.77-windows-x64/apache-tomcat-8.5.77/lib/tomcat-jni.jar"/>
+        <pathelement location="F:/softs/apache-tomcat-8.5.77-windows-x64/apache-tomcat-8.5.77/lib/tomcat-util-scan.jar"/>
+        <pathelement location="F:/softs/apache-tomcat-8.5.77-windows-x64/apache-tomcat-8.5.77/lib/tomcat-util.jar"/>
+        <pathelement location="F:/softs/apache-tomcat-8.5.77-windows-x64/apache-tomcat-8.5.77/lib/tomcat-websocket.jar"/>
+        <pathelement location="F:/softs/apache-tomcat-8.5.77-windows-x64/apache-tomcat-8.5.77/lib/websocket-api.jar"/>
+    </path>
+    <path id="Web App Libraries.libraryclasspath"/>
+    <path id="EAR Libraries.libraryclasspath"/>
+    <path id="Maven Dependencies.libraryclasspath">
+        <pathelement location="../../.m2/repository/com/sun/jersey/jersey-bundle/1.19/jersey-bundle-1.19.jar"/>
+        <pathelement location="../../.m2/repository/javax/ws/rs/jsr311-api/1.1.1/jsr311-api-1.1.1.jar"/>
+        <pathelement location="../../.m2/repository/javax/javaee-web-api/6.0/javaee-web-api-6.0.jar"/>
+        <pathelement location="../../.m2/repository/com/sun/grizzly/grizzly-servlet-webserver/1.9.18-i/grizzly-servlet-webserver-1.9.18-i.jar"/>
+        <pathelement location="../../.m2/repository/com/sun/grizzly/grizzly-http/1.9.18-i/grizzly-http-1.9.18-i.jar"/>
+        <pathelement location="../../.m2/repository/com/sun/grizzly/grizzly-framework/1.9.18-i/grizzly-framework-1.9.18-i.jar"/>
+        <pathelement location="../../.m2/repository/com/sun/grizzly/grizzly-rcm/1.9.18-i/grizzly-rcm-1.9.18-i.jar"/>
+        <pathelement location="../../.m2/repository/com/sun/grizzly/grizzly-portunif/1.9.18-i/grizzly-portunif-1.9.18-i.jar"/>
+        <pathelement location="../../.m2/repository/com/sun/grizzly/grizzly-http-servlet/1.9.18-i/grizzly-http-servlet-1.9.18-i.jar"/>
+        <pathelement location="../../.m2/repository/com/sun/grizzly/grizzly-utils/1.9.18-i/grizzly-utils-1.9.18-i.jar"/>
+        <pathelement location="../../.m2/repository/javax/servlet/servlet-api/2.5/servlet-api-2.5.jar"/>
+        <pathelement location="../../.m2/repository/com/sun/jersey/jersey-test-framework/jersey-test-framework-grizzly/1.4/jersey-test-framework-grizzly-1.4.jar"/>
+        <pathelement location="../../.m2/repository/com/sun/jersey/jersey-test-framework/jersey-test-framework-core/1.4/jersey-test-framework-core-1.4.jar"/>
+        <pathelement location="../../.m2/repository/com/sun/jersey/jersey-server/1.4/jersey-server-1.4.jar"/>
+        <pathelement location="../../.m2/repository/com/sun/jersey/jersey-core/1.4/jersey-core-1.4.jar"/>
+        <pathelement location="../../.m2/repository/asm/asm/3.1/asm-3.1.jar"/>
+        <pathelement location="../../.m2/repository/com/sun/jersey/jersey-client/1.4/jersey-client-1.4.jar"/>
+        <pathelement location="../../.m2/repository/org/glassfish/javax.servlet/3.0-b66/javax.servlet-3.0-b66.jar"/>
+        <pathelement location="../../.m2/repository/junit/junit/4.5/junit-4.5.jar"/>
+        <pathelement location="../../.m2/repository/com/google/code/gson/gson/2.8.6/gson-2.8.6.jar"/>
+    </path>
+    <path id="manet-webapp.classpath">
+        <pathelement location="E:/Study/Coumputer Study Materials/Masters/middleware/Assignment 3/additional lib/jersey-bundle-1.19.1.jar"/>
+        <pathelement location="target/classes"/>
+        <path refid="Apache Tomcat v8.5 [Apache Tomcat v8.5].libraryclasspath"/>
+        <path refid="Web App Libraries.libraryclasspath"/>
+        <path refid="EAR Libraries.libraryclasspath"/>
+        <path refid="Maven Dependencies.libraryclasspath"/>
+    </path>
+    <target name="init">
+        <mkdir dir="target/classes"/>
+        <copy includeemptydirs="false" todir="target/classes">
+            <fileset dir="src">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="clean">
+        <delete dir="target/classes"/>
+    </target>
+    <target depends="clean" name="cleanall"/>
+    <target depends="build-subprojects,build-project" name="build"/>
+    <target name="build-subprojects"/>
+    <target depends="init" name="build-project">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="target/classes" includeantruntime="false" source="${source}" target="${target}">
+            <src path="src"/>
+            <classpath refid="manet-webapp.classpath"/>
+        </javac>
+    </target>
+    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
+    <target description="copy Eclipse compiler jars to ant lib directory" name="init-eclipse-compiler">
+        <copy todir="${ant.library.dir}">
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </copy>
+        <unzip dest="${ant.library.dir}">
+            <patternset includes="jdtCompilerAdapter.jar"/>
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </unzip>
+    </target>
+    <target description="compile project with Eclipse compiler" name="build-eclipse-compiler">
+        <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
+        <antcall target="build"/>
+    </target>
+              	<target name="war" description="Bundles the application as a WAR file" depends="clean, build">
+              			<mkdir dir="WebContent/WEB-INF/classes" />
+
+              			<copy includeemptydirs="false" todir="WebContent/WEB-INF/classes">
+              				<fileset dir="build/classes">
+              					<include name="**/*.class" />
+              				</fileset>
+              			</copy>
+
+              			<war destfile="build/JavaWeb.war" basedir="WebContent" needxmlfile="false">
+              			</war>
+              		</target>
+</project>
